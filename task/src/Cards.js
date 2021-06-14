@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from 'axios'
+import "./cards.css";
 
 export default function Cards() {
   const [page, setPage] = useState(1),
@@ -17,15 +18,17 @@ export default function Cards() {
   }
 
   return (
-    <div>
+      <>
+    <div className="lingoq-cards">
       {users.length > 0
         ? users.map((data) => (
-            <div>
-              <h1>{data.name}</h1>
-              <h1>{data.trips}</h1>
+            <div className="card one">
+              <h1>Name: {data.name}</h1>
+              <h1>Trips: {data.trips}</h1>
             </div>
           ))
         : "Data field is empty"}
     </div>
+    </>
   );
 }

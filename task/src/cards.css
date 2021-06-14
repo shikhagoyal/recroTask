@@ -1,0 +1,25 @@
+.lingoq-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+    .card {
+      width: 260px;
+      margin: 36px 20px 0 0;
+      object-fit: contain;
+      border-radius: 16px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem 1rem;
+    }
+    .one {
+      background-image: linear-gradient(
+        to bottom,
+        #fbfdfc 13%,
+        #baf7da 95%
+      );
+      font-size: 12px;
+    }
